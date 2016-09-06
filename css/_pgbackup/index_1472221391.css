@@ -1,0 +1,41 @@
+
+
+#headerNav
+{
+    background-color: #060a0c;
+}
+
+#section-hero
+{
+    padding-top: 33vh;
+    padding-bottom: 33vh;
+}
+
+#section_Welcome
+{
+    background-color: #efefef;
+}
+
+#footer_test
+{
+    min-height: 100px;
+    background-color: #3a3a3a;
+}
+
+#anchor-section-welcome
+{
+    position: absolute;
+    width: 20px;
+    margin-top: -80px;
+    height: 20px;
+}
+
+@media (max-width:599px)
+{
+    .tG-sections__spacer
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+

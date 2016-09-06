@@ -1,0 +1,194 @@
+
+
+html
+{
+    font-size: 10px;
+}
+
+._area-all
+{
+    width: 65%;
+    min-height: 100px;
+    margin: 0 auto;
+}
+
+._sections-all
+{
+    min-height: 100px;
+    padding: 40px 20px;
+}
+
+@media (max-width: 1200px)
+{
+    ._sections-all
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    ._sections-all
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    ._area-all
+    {
+        width: 85%;
+    }
+}
+
+@media (max-width: 600px)
+{
+    ._area-all
+    {
+        width: 100%;
+    }
+}
+
+._modules_all
+{
+    min-height: 100px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (max-width: 1200px)
+{
+    ._modules_all
+    {
+        margin-left: -10px;
+        margin-right: -10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    ._modules_all
+    {
+        margin-left: -5px;
+        margin-right: -5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+._grid-3c
+{
+    width: 33.3333%;
+    float: left;
+    padding: 20px;
+}
+
+@media (max-width: 600px)
+{
+    ._grid-3c
+    {
+        width: 100%;
+        float: none;
+        clear: both;
+    }
+}
+
+.text-align-center
+{
+    text-align: center;
+}
+
+.fa-icon-wrapper
+{
+    border-radius: 50%;
+    width: 175px;
+    height: 175px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #3dc9b3;
+    overflow: hidden;
+}
+
+.fa-5x-text
+{
+    color: #fff;
+    line-height: 17.5rem ;
+    text-align: center;
+    text-shadow: 1px 1px rgba(44, 157, 139, 0.3) , 2px 2px rgba(45, 161, 143, 0.314) , 3px 3px rgba(47, 165, 146, 0.328) , 4px 4px rgba(48, 168, 149, 0.342) , 5px 5px rgba(49, 171, 152, 0.356) , 6px 6px rgba(50, 174, 154, 0.37) , 7px 7px rgba(51, 176, 156, 0.384) , 8px 8px rgba(52, 178, 158, 0.398) , 9px 9px rgba(52, 179, 159, 0.412) , 10px 10px rgba(53, 181, 161, 0.426) , 11px 11px rgba(53, 182, 162, 0.44) , 12px 12px rgba(54, 184, 163, 0.454) , 13px 13px rgba(54, 185, 164, 0.468) , 14px 14px rgba(55, 186, 165, 0.482) , 15px 15px rgba(55, 187, 166, 0.496) , 16px 16px rgba(56, 188, 167, 0.51) , 17px 17px rgba(56, 189, 168, 0.524) , 18px 18px rgba(56, 189, 168, 0.538) , 19px 19px rgba(56, 190, 169, 0.552) , 20px 20px rgba(57, 191, 170, 0.566) , 21px 21px rgba(57, 191, 170, 0.58) , 22px 22px rgba(57, 192, 171, 0.594) , 23px 23px rgba(57, 192, 171, 0.608) , 24px 24px rgba(58, 193, 172, 0.622) , 25px 25px rgba(58, 193, 172, 0.636) , 26px 26px rgba(58, 194, 173, 0.65) , 27px 27px rgba(58, 194, 173, 0.664) , 28px 28px rgba(58, 195, 173, 0.678) , 29px 29px rgba(58, 195, 174, 0.692) , 30px 30px rgba(59, 196, 174, 0.706) , 31px 31px rgba(59, 196, 174, 0.72) , 32px 32px rgba(59, 196, 175, 0.734) , 33px 33px rgba(59, 197, 175, 0.748) , 34px 34px rgba(59, 197, 175, 0.762) , 35px 35px rgba(59, 197, 175, 0.776) , 36px 36px rgba(59, 197, 176, 0.79) , 37px 37px rgba(59, 198, 176, 0.804) , 38px 38px rgba(60, 198, 176, 0.818) , 39px 39px rgba(60, 198, 176, 0.832) , 40px 40px rgba(60, 198, 177, 0.846) , 41px 41px rgba(60, 199, 177, 0.86) , 42px 42px rgba(60, 199, 177, 0.874) , 43px 43px rgba(60, 199, 177, 0.888) , 44px 44px rgba(60, 199, 177, 0.902) , 45px 45px rgba(60, 199, 178, 0.916) , 46px 46px rgba(60, 200, 178, 0.93) , 47px 47px rgba(60, 200, 178, 0.944) , 48px 48px rgba(60, 200, 178, 0.958) , 49px 49px rgba(60, 200, 178, 0.972) , 50px 50px rgba(60, 200, 178, 0.986);
+}
+
+#areaThreeCol
+{
+    width: 75%;
+}
+
+.columns
+{
+    text-transform: uppercase;
+    font-size: 2.0rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.textSpacer
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.iconic
+{
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #3dc9b3;
+    height: 5px;
+    margin-bottom: 2rem;
+}
+
+p
+{
+    color: 8c9398;
+}
+
+body
+{
+    margin: 0;
+    color: #353535;
+    font-family: 'RobotoDraft', sans-serif;
+    font-size: 1.6rem;
+    line-height: 140%;
+    font-weight: 400;
+}
+
+@media (max-width:1435px)
+{
+    html
+    {
+        font-size: 9.25px;
+    }
+}
+
+@media (max-width:1200px)
+{
+    html
+    {
+        font-size: 8.25px;
+    }
+}
+
+@media (max-width:600px)
+{
+    html
+    {
+        font-size: 7px;
+    }
+}
+

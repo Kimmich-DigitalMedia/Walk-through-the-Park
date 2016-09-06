@@ -1,0 +1,363 @@
+
+
+/*************************************************************************************
+TheGrid Framework - We prepend the tg for avoiding any collision with other frameworks!
+**************************************************************************************/
+
+/*** The Section Element ***/
+
+.tG-sections
+{
+    background: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.tG-sections__spacer
+{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.tg-section__first-child
+{
+    padding-top: 80px !important;
+}
+
+.tg-section__last-child
+{
+    padding-bottom: 80px !important;
+}
+
+@media (max-width: 1200px)
+{
+    .tg-section
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .tg-section_spacer
+    {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .tg-section__first-child
+    {
+        padding-top: 60px !important;
+    }
+    .tg-section__last-child
+    {
+        padding-bottom: 60px !important;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .tg-section
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .tg-section_spacer
+    {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .tg-section__first-child
+    {
+        padding-top: 40px !important;
+    }
+    .tg-section__last-child
+    {
+        padding-bottom: 40px !important;
+    }
+}
+
+/*** The Area - it'll define the page width for each single device ***/
+
+.tg-page__width
+{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1435px)
+{
+    .tg-page__width
+    {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .tg-page__width
+    {
+        width: 85%;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .tg-page__width
+    {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .tg-page__width
+    {
+        width: 95%;
+    }
+}
+
+/*** The Module ***/
+
+.tG-module
+{
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (max-width: 1200px)
+{
+    .tG-module
+    {
+        margin-left: -10px;
+        margin-right: -10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .tG-module
+    {
+        margin-right: -5px;
+        margin-top: -5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+/*** The Grid ***/
+
+.tG-powerGrid [class^="tg-grid__"]
+{
+    padding: 20px;
+}
+
+@media (max-width: 1200px)
+{
+    .tG-powerGrid [class^="tg-grid__"]
+    {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .tG-powerGrid [class^="tg-grid__"]
+    {
+        padding: 5px;
+    }
+}
+
+.tg-grid__1col
+{
+    width: 100%;
+    float: none;
+    clear: both;
+}
+
+.tg-grid__2col
+{
+    width: 50%;
+    float: left;
+}
+
+.tg-grid__3col
+{
+    width: 33.3333%;
+    float: left;
+}
+
+@media (max-width: 600px)
+{
+    .tg-grid__3col
+    {
+        width: 100%;
+        clear: both;
+        float: none;
+        padding: 5px;
+    }
+}
+
+.tg-grid__4col
+{
+    width: 25%;
+    float: left;
+}
+
+@media (max-width: 1200px)
+{
+    .tg-grid__4col
+    {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (max-width:600px)
+{
+    .tg-grid__4col
+    {
+        width: 100%;
+        float: none;
+        clear: both;
+    }
+}
+
+.tg-grid__12col
+{
+    width: 8.3333%;
+    float: left;
+}
+
+.tg-nav__item
+{
+    width: 25%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media (max-width: 600px)
+{
+    .tg-nav__item
+    {
+        width: 100%;
+    }
+}
+
+.tg-nav__basics
+{
+    text-align: center;
+    background-color: black;
+}
+
+.tg-nav__minheight
+{
+    min-height: 62px;
+}
+
+.tg-grid__bg-theme-1
+{
+    background-color: #e1dddd;
+}
+
+/* Padding and Margin*/
+
+.section__hero-img
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tg-vh--75
+{
+    height: 75vh;
+}
+
+.tg-vh--66
+{
+    height: 66vh;
+}
+
+.tg-vh--50
+{
+    height: 50vh;
+}
+
+.tg-vh--33
+{
+    height: 33vh;
+}
+
+.tg-divider
+{
+    height: 1px;
+    background-color: #8c9398;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.fixed
+{
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+
+nav
+{
+    background: #060a0c;
+    z-index: 9999;
+}
+
+@media (max-width:1199px)
+{
+    .tG-sections__spacer
+    {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.tG-sections__spacer--fc
+{
+    padding-top: 80px;
+}
+
+@media (max-width:1199px)
+{
+    .tG-sections__spacer--fc
+    {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width:599px)
+{
+    .tG-sections__spacer--fc
+    {
+        padding-top: 40px !important;
+    }
+}
+
+.tG-power
+{
+}
+
+.font-grey
+{
+    color: 8c9398;
+}
+
+.span-lighter
+{
+    color: 8c9398;
+}
+

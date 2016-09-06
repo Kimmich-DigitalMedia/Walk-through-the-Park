@@ -1,0 +1,44 @@
+
+
+._sections-all
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #b1afaf;
+    min-height: 100px;
+}
+
+@media (max-width:1199px)
+{
+    ._sections-all
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width:599px)
+{
+    ._sections-all
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+_area-all
+{
+    width: 65%;
+    min-width: 100px;
+    background-color: #d10909;
+}
+
+._area-all
+{
+    width: 65%;
+    min-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fdf9f9;
+}
+

@@ -1,0 +1,75 @@
+/*************************************************************************************
+The Index page
+**************************************************************************************/
+
+/*Wanted to play with Retina on hero*/
+.section__hero-img
+{
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    background-image: url('../img/pine-hero2-alt.jpg');
+}
+/*...but on mobile breakpoint...*/
+@media (max-width:600px)
+{
+    /*...we chose another crop...!*/
+    .section__hero-img
+    {
+        background-image: url('../img/pine-hero-bp600.jpg');
+        background-size: cover;
+    }
+    /*But if it is Retina...*/
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) 
+    
+    { 
+        /*...use the twice the size image!*/
+        .section__hero-img
+        {
+            background-image: url('../img/pine-hero-bp600@2x.jpg');
+            background-size: cover;
+        }
+    }
+}
+
+
+
+#headerNav
+{
+    background-color: #060a0c;
+}
+
+#section-hero
+{
+    padding-top: 33vh;
+    padding-bottom: 33vh;
+}
+
+#section_Welcome
+{
+    background-color: #efefef;
+}
+
+#footer_test
+{
+    min-height: 100px;
+    background-color: #3a3a3a;
+}
+
+#anchor-section-welcome
+{
+    position: absolute;
+    width: 20px;
+    margin-top: -80px;
+    height: 20px;
+}
+
+@media (max-width:599px)
+{
+    .tG-sections__spacer
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+

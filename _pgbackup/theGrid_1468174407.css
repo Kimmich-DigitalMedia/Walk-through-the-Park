@@ -1,0 +1,41 @@
+
+
+.tg-sections
+{
+    padding: 10px 20px;
+}
+
+@media (max-width:1199px)
+{
+    .tg-sections
+    {
+        padding: 5px 10px;
+    }
+}
+
+.tg-sections:first-child
+{
+    padding: 20px 20px 10px;
+}
+
+@media (max-width:1199px)
+{
+    .tg-sections:first-child
+    {
+        padding: 10px 10px 5px;
+    }
+}
+
+.tg-sections:last-child
+{
+    padding: 10px 20px 20px;
+}
+
+@media (max-width:1199px)
+{
+    .tg-sections:last-child
+    {
+        padding: 5px 10px 10px;
+    }
+}
+

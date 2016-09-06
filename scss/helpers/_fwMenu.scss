@@ -1,0 +1,147 @@
+/** Menu Stuff **/
+
+.fwNavBasicStyle {
+	font-size: 1.6rem;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:500
+}
+
+.fwNavContainer1 {
+	width: 100%;
+	float:right;
+	position:relative;
+	right:50%
+}
+
+#fwNav1 {
+	position:relative;
+	display:block;
+	left:50%;
+	padding:0;
+	margin:0;
+	list-style:none
+}
+#fwNav1 .fwNavItem {
+	width:16.6667%; /* Adjust here by numbers of menu-entries */
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+	border-right:1px solid #4D4D4D;
+	border-top:0; border-bottom:0;
+	border-left:1px solid #E6E6E6
+}
+#fwNav1 .fwNavItem a {
+	display:block;
+	color:#FFFFFF;
+	text-decoration:none;
+	padding:15px 10px 15px 10px
+}
+#fwNav1 .fwFirstChild {
+	border-left:0
+}
+#fwNav1 .fwLastChild {
+	border-right:0
+}
+#fwNav1 .fwNavItem:hover > span a,
+#fwNav1 .fwNavItem:hover > a {
+	color:#EDEDED;
+	text-decoration:none
+}
+#fwNav1 .fwNavItem a:hover,
+#fwNav1 .fwNavItem span a:hover,
+#fwNav1 .fwNavItem a:focus {
+	color:#EDEDED;
+	text-decoration:none
+}
+#fwNav1-toggle, .fwNav1-toggle-label {
+	display:none
+}
+.fwNav1-toggle-label {
+	width:30px;
+	height:30px;
+	overflow:hidden;
+	background-image:url('../img/fwOpen-white.png');
+	background-repeat:no-repeat; background-size:100%;
+	margin-left:auto;
+	margin-right:auto
+}
+
+#fwNav1 * .sub {
+	visibility:hidden;
+	position:absolute;
+	width: 100%;
+	left:-0;
+	float:left;
+	padding:0;
+	margin:0;
+	list-style:none;
+	z-index:1
+}
+#fwNav1 .sub * .sub {
+	top:-0
+}
+#fwNav1 .fwNavItem .sub .fwNavItem {
+	display:block;
+	margin:0;
+	padding:0;
+	left:0;
+	width:100%;
+	border-left:0;
+	border-right:0;
+	border-top:none;
+	border-bottom:none
+}
+#fwNav1 * * * .sub {
+	left:100%;
+	top:0
+}
+#fwNav1 .fwNavItem .sub .fwNavItem a {
+	display:block;
+	color:#0288D1;
+	text-decoration:none;
+	background:#E6E6E6;
+	padding:15px 10px 15px 10px
+}
+#fwNav1 .fwNavItem .sub .fwFirstChild { border-top:0 }
+#fwNav1 .fwNavItem .sub .fwLastChild { border-bottom:0 }
+#fwNav1 .fwNavItem .sub .fwNavItem:hover > span a, #fwNav1 .fwNavItem .sub .fwNavItem:hover > a { color:#FFFFFF; text-decoration:none; background:#808080 }
+#fwNav1 .fwNavItem .sub .fwNavItem a:hover, #fwNav1 .fwNavItem .sub .fwNavItem span a:hover, #fwNav1 .fwNavItem .sub .fwNavItem a:focus { color:#FFFFFF; text-decoration:none; background:#808080 }
+#fwNav1 :hover > .sub { visibility:visible }
+#fwNav1 .fwNavItem a.fwCurrent, #fwNav1 .fwNavItem a.fwCurrent:hover { display:block; color:#FFFFFF; background:#0288D1; font-weight:normal }
+#fwNav1 .fwNavItem .sub .fwNavItem a.fwCurrent, #fwNav1 .fwNavItem .sub .fwNavItem a.fwCurrent:hover { display:block; font-weight:normal }
+
+@media screen and (max-width:600px)
+{
+	.fwNavContainer1 { display:none; position:fixed; width:100%; top:0; right:100%; bottom:0; left:0; margin-left:-100%; background-color:#060a0c; -webkit-overflow-scrolling:touch; overflow:auto; float:none; -webkit-transition:.2s ease-out margin, .2s ease-out right; -moz-transition:.2s ease-out margin, .2s ease-out right; -ms-transition:.2s ease-out margin, .2s ease-out right; -o-transition:.2s ease-out margin, .2s ease-out right; transition:.2s ease-out margin, .2s ease-out right }
+	#fwNav1 { width:100%; right:0; left:0; margin-top:0px }
+	#fwNav1 .fwNavItem { box-sizing:border-box; float:none; overflow:hidden; width:100%; border-bottom:1px solid #4D4D4D; border-right:0; border-top:1px solid #E6E6E6; border-left:0 }
+	#fwNav1 .fwNavItem a { padding-top:40px; padding-bottom:40px; padding-left:40px; padding-right:40px }
+	#fwNav1 .fwFirstChild { border-top:0 }
+	#fwNav1 .fwLastChild { border-bottom:0 }
+	.fwNav1-toggle-label { display:block; position:relative; cursor:pointer; -webkit-touch-callout:none; -webkit-user-select:none; user-select:none }
+	.fwNav1-toggle-close { background-image:url('../img/fwClose-white.png'); margin:40px auto 40px auto }
+	.fwNavContainer1.fwMenuOn { margin-left:0; right:0 }
+	#fwNav1 .fwNavItem .sub .fwNavItem a { padding-top:20px; padding-bottom:20px; padding-right:10px; padding-left:20px }
+	#fwNav1 .fwNavItem .sub .sub .fwNavItem a { padding-left:30px }
+	#fwNav1 .fwNavItem .sub .sub .sub .fwNavItem a { padding-left:40px }
+	#fwNav1 .fwNavItem .sub { position:relative; visibility:visible; width:100%; left:0; top:0 }
+	#fwNav1 .fwNavItem .sub .fwNavItem { width:100% }
+	#fwNav1 .fwNavItem .sub .sub { left:0 }
+	#fwNav1 .fwNavItem .sub .sub .fwNavItem { border-left:none }
+	.fwMainPointer1, .fwSubPointer1 { display:none }
+	#fwNav1 .fwNavItem .sub .fwLastChild { border-bottom:none }
+	#fwNav1 .fwLastChild .sub .fwLastChild { border-bottom:0 }
+}
+
+.fwNav1-toggle-label {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+li.fwNavItem.current {
+	background-color: #009688;
+}

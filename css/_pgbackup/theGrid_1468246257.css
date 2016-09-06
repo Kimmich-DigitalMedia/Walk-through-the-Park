@@ -1,0 +1,68 @@
+
+
+.tg-sections
+{
+    padding: 10px 20px;
+}
+
+@media (max-width:1199px)
+{
+    .tg-sections
+    {
+        padding: 5px 10px;
+    }
+}
+
+.tg-sections:first-child
+{
+    padding: 20px 20px 10px;
+}
+
+@media (max-width:1199px)
+{
+    .tg-sections:first-child
+    {
+        padding: 10px 10px 5px;
+    }
+}
+
+.tg-sections:last-child
+{
+    padding: 10px 20px 20px;
+}
+
+@media (max-width:1199px)
+{
+    .tg-sections:last-child
+    {
+        padding-left: 10px;
+    }
+}
+
+.tg-page__width
+{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tg-module
+{
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.tg-grid
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.tg-grid__12col
+{
+    width: 8.3333%;
+    float: left;
+}
+

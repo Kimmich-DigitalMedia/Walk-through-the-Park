@@ -1,0 +1,261 @@
+
+
+/*************************************************************************************
+TheGrid Framework - We prepend the tg for avoiding any collision with other frameworks!
+**************************************************************************************/
+
+/*** The Section Element ***/
+
+.tg-sections
+{
+    padding: 60px 20px;
+    background: #ffffff;
+}
+
+.tg-sections__first-child
+{
+    padding-top: 80px !important;
+}
+
+.tg-sections__last-child
+{
+    padding-bottom: 80px !important;
+}
+
+@media (max-width: 1200px)
+{
+    .tg-sections
+    {
+        padding: 40px 10px;
+    }
+    .tg-sections__first-child
+    {
+        padding-top: 60px !important;
+    }
+    .tg-sections__last-child
+    {
+        padding-bottom: 60px !important;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .tg-sections
+    {
+        padding: 20px 5px;
+    }
+    .tg-sections__first-child
+    {
+        padding-top: 40px !important;
+    }
+    .tg-sections__last-child
+    {
+        padding-bottom: 40px !important;
+    }
+}
+
+/*** The Area - it'll define the page width for each single device ***/
+
+.tg-page__width
+{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1435px)
+{
+    .tg-page__width
+    {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .tg-page__width
+    {
+        width: 85%;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .tg-page__width
+    {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .tg-page__width
+    {
+        width: 95%;
+    }
+}
+
+/*** The Module ***/
+
+.tg-module
+{
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (max-width: 1200px)
+{
+    .tg-module
+    {
+        margin-left: -10px;
+        margin-right: -10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .tg-module
+    {
+        margin-right: -5px;
+        margin-top: -5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+/*** The Grid ***/
+
+.tg-grid
+{
+    padding: 20px;
+    float: left;
+}
+
+@media (max-width: 1200px)
+{
+    .tg-grid
+    {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .tg-grid
+    {
+        padding: 5px;
+    }
+}
+
+.tg-grid__1col
+{
+    width: 100%;
+    clear: both;
+}
+
+.tg-grid__2col
+{
+    width: 50%;
+    float: left;
+}
+
+.tg-grid__3col
+{
+    width: 33.3333%;
+    float: left;
+}
+
+@media (max-width: 600px)
+{
+    .tg-grid__3col
+    {
+        width: 100%;
+        clear: both;
+        float: none;
+    }
+}
+
+.tg-grid__4col
+{
+    width: 25%;
+    float: left;
+}
+
+@media (max-width: 1200px)
+{
+    .tg-grid__4col
+    {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (max-width:600px)
+{
+    .tg-grid__4col
+    {
+        width: 100%;
+        float: none;
+        clear: both;
+    }
+}
+
+.tg-grid__12col
+{
+    width: 8.3333%;
+    float: left;
+}
+
+.tg-nav__item
+{
+    width: 25%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media (max-width: 600px)
+{
+    .tg-nav__item
+    {
+        width: 100%;
+    }
+}
+
+.tg-nav__basics
+{
+    text-align: center;
+    background-color: black;
+}
+
+.tg-nav__minheight
+{
+    min-height: 62px;
+}
+
+.tg-grid__bg-theme-1
+{
+    background-color: #e1dddd;
+}
+
+/* Padding and Margin*/
+
+.min-height-500px
+{
+    min-height: 500px !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tg-vh--75
+{
+    height: 75vh;
+}
+

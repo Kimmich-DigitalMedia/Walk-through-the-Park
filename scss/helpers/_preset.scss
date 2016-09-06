@@ -1,0 +1,174 @@
+/*************************************************************************************
+Reset Version 0.9 beta - Here we start to create our own reset - as a reusable thing
+dedicated for all projects.
+**************************************************************************************/
+
+/*************************************************************************************
+1. Reset v2.0 | 20110126 (http://meyerweb.com/eric/tools/css/reset/)
+**************************************************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*************************************************************************************
+2. Mixins (https://web-design-weekly.com/2013/05/12/handy-sass-mixins/)
+**************************************************************************************/
+
+/*** Box-Sizing ***/
+@mixin box-sizing( $type: border-box ) {
+    -webkit-box-sizing: $type;
+       -moz-box-sizing: $type;
+         -o-box-sizing: $type;
+        -ms-box-sizing: $type;
+            box-sizing: $type;
+}
+
+/*** Clearfixing ***/
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+/*** Breakpoints ***/
+@mixin breakpoint($point) {
+   @if $point == MacBook {
+     @media (max-width: 1440px) { @content ; }
+  }
+   @else if $point == Tablet-Landscape {
+     @media (max-width: 1200px) { @content ; }
+  }
+    @else if $point == Tablet-Portrait {
+     @media (max-width: 900px) { @content ; }
+  }
+   @else if $point == Mobile {
+     @media (max-width: 600px)  { @content ; }
+  }
+}
+
+/*************************************************************************************
+Using the stuff
+**************************************************************************************/
+
+/** Box-Sizing **/
+html {
+    @include box-sizing();
+    word-break: break-word;// Non standard for webkit
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+/** Clearfixing needed? Apply the class = group to the element **/
+.group {
+     @include clearfix();
+}
+
+/** This one is for parallax-hero-image. It's about defining the specific heights.
+The class we add in Freeway to the #section-parallax and remove the ID from there **/
+.parallax-height {
+    height:600px;
+    height: 66vh;
+    @include breakpoint(MacBook) {
+            height:500px;
+            height: 40vh;
+    }
+}
+
+body {
+	text-rendering: optimizelegibility;
+
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+
+	-moz-tap-highlight-color:rgba(0,0,0,0);
+	-moz-text-size-adjust: none;
+	-moz-font-smoothing: antialiased;
+
+	-ms-tap-highlight-color:rgba(0,0,0,0);
+	-ms-text-size-adjust: none;
+	-ms-font-smoothing: antialiased;
+    /*  Prevents Flickering  */
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+}
+
+a:link {
+    color: #009688;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #d47508;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #164840;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/** Responsive Images and Videos **/
+
+img.responsive-img,
+video.responsive-video {
+    width: 100%;
+    height: auto;
+    display: block
+}
