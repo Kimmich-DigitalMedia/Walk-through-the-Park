@@ -44,3 +44,9 @@ AOS.init({
       offset: 200,
       duration: 1000,
     });
+
+/***************** Baseliner https://keyes.ie/things/baseliner/ ******************/
+
+            window.onload = function() {
+                baseliner = new Baseliner(12);
+            }
